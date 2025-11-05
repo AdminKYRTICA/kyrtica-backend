@@ -1,0 +1,18 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Env & secrets
+.env
+*.env.local
+
+# OS / editor
+.DS_Store
+
+# Docker
+*.pid
+*.log
+
+# Node (if you add frontend later)
+node_modules/
