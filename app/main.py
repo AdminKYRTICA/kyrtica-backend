@@ -1,10 +1,8 @@
+# app/main.py
 from fastapi import FastAPI
-from .api import routes
+from app.api.routes import router
 
-app = FastAPI(title="Kyrtica Backend", version="0.1.0")
+app = FastAPI(title="Kyrtica Backend")
 
-@app.get("/health")
-def health():
-    return {"ok": True}
-
-app.include_router(routes.router, prefix="/api")
+# ✅ Single place for the /api prefix
+app.include_router(router, prefix="/api")

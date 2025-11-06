@@ -1,0 +1,3 @@
+cd ~/kyrtica-backend/app
+mkdir -p api
+touch api/__init__
