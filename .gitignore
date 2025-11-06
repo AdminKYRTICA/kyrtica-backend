@@ -1,4 +1,30 @@
 # Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+venv/
+
+# Environment variables
+.env
+.env.*
+
+# IDE and OS junk
+.DS_Store
+.vscode/
+.idea/
+
+# Docker volumes (local data)
+pg_data/
+redis_data/
+
+# Logs
+*.log
+logs/
+
+# Test caches
+.pytest_cache/# Python
 venv/
 __pycache__/
 *.pyc
